@@ -14,6 +14,14 @@ public class Recursion1 {
 		System.out.println(path(4,4));
 		
 		System.out.println(factorial(10));
+		
+		int[] arr = new int [20];
+		
+		arr[0] = 1;
+		arr[1] = 2;
+		arr[2] = 3;
+		
+		System.out.println( geekonacci(arr, 4,3));
 	}
 	
 	// To find sum of n natural nos.
@@ -70,6 +78,25 @@ public class Recursion1 {
 		
 		return(n * factorial(n-1));
 	}
+	
+	
+	//Geek created a random series and given a name geek-onacci series. Given four integers A, B, C, N. A, B, C 
+	//represents the first three numbers of geek-onacci series. Find the Nth number of the series. The nth number 
+	//of geek-onacci series is a sum of the last three numbers (summation of N-1th, N-2th, and N-3th geek-onacci numbers.
+	
+	
+	public static int geekonacci(int[] a, int targetIndex,int n){
+		
+		a[n] = a[n-1] +a[n-2] + a[n-3];
+		
+		if(n == targetIndex) {
+			return a[n];
+		}
+		
+		return geekonacci(a, targetIndex , n+1);
+	}
+		    
+		
 }
 
 
