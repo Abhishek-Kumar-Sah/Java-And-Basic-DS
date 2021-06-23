@@ -6,6 +6,8 @@ public class KADANES_ALGO_MaxSumSubArray {
         int[] arr1 = {-5,1,-2,3,-1,2,-2};
         System.out.println(maxSum(arr1));
     }
+
+
     public static int maxSum(int[] arr){
         int res = arr[0] , maxSumTillPreviousElement = arr[0];
 
