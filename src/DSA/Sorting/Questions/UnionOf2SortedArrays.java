@@ -1,8 +1,9 @@
 package DSA.Sorting.Questions;
 
 public class UnionOf2SortedArrays {
+
     public static void main(String[] args) {
-        int[] arr1 = {3,5,10,10,10,15,15,20};
+        int[] arr1 = {3,5,10,10,10,15,15,20,45};
         int[] arr2 = {5,10,10,15,30};
 
         int[] arr3 = {1,1,3,3,3};
@@ -11,6 +12,8 @@ public class UnionOf2SortedArrays {
         printUnion(arr1,arr2);
         printUnion(arr3,arr4);
     }
+
+
     public static void printUnion(int[] arr1 , int[] arr2){
         int i =0, j= 0;
         while (i < arr1.length && j < arr2.length){

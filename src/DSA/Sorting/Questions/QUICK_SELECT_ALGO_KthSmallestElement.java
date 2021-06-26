@@ -14,7 +14,7 @@ public class QUICK_SELECT_ALGO_KthSmallestElement {
 
         int low =0, high = arr.length-1;
 
-        while (low < high){
+        while (low <= high){
             int p = lomutoPartition(arr,low,high); // Check which element is being fixed in its correct place
 
             if (p == k-1)

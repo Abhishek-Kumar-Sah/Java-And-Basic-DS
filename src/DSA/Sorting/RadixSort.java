@@ -32,7 +32,7 @@ public class RadixSort {
     //Cycle sort as sub-routine for Radix sort.
     private static void cycleSort(int[] arr, int divisor){
 
-        int[] count = new int[10]; // Because inputs will lie in 0 to 9 : range of a single digit.
+        int[] count = new int[20]; // Because inputs will lie in 0 to 9 : range of a single digit.
 
         for (int i = 0 ; i < arr.length ; i++){
             count[(arr[i]/divisor) % 10]++;
