@@ -4,8 +4,8 @@ package DSA.Searching;
 
 public class AllocateMinPages {
     public static void main(String[] args) {
-        int[] arr = {10,20,10,30};
-        System.out.println(allocatedMaxPages(arr,2));
+        int[] arr = {148,122};
+        System.out.println(allocatedMaxPages(arr,1));
     }
     public static int allocatedMaxPages(int[] arr, int noOfStudents){
         int sumOfPages = 0, maxPage =0, result=0;
